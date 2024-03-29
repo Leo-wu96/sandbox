@@ -2,8 +2,8 @@
 
 # repeater's target dir
 REPEATER_TARGET_DIR=../target/repeater
-typeset HOME=/Users/wzx/desktop/sandbox/data/fll
-typeset SANDBOX_HOME=/Users/wzx/desktop/sandbox/data/fll/sandbox
+typeset HOME=/Users/zixian.wu/desktop/sandbox-relate/data/fll
+typeset SANDBOX_HOME=/Users/zixian.wu/desktop/sandbox-relate/data/fll/sandbox
 # exit shell with err_code
 # $1 : err_code
 # $2 : err_msg
@@ -22,4 +22,4 @@ curl -s https://github.com/alibaba/jvm-sandbox-repeater/releases/download/v1.0.0
 
 # copy module to ~/.sandbox-module
 mkdir -p ${HOME}/.sandbox-module || exit_on_err 1 "permission denied, can not mkdir ~/.sandbox-module"
-cp -r ${REPEATER_TARGET_DIR}/* ${SANDBOX_HOME}/sandbox-module || exit_on_err 1 "permission denied, can not copy module to ~/.sandbox-module"
+cp -r ${REPEATER_TARGET_DIR}/* ${SANDBOX_HOME}/.sandbox-module || exit_on_err 1 "permission denied, can not copy module to ~/.sandbox-module"

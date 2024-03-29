@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-typeset HOME=/Users/wzx/desktop/sandbox
+typeset HOME=/Users/zixian.wu/desktop/sandbox-relate
 typeset MODULE_HOME=${HOME}/.sandbox-module
 
 # exit shell with err_code
@@ -15,7 +15,7 @@ exit_on_err()
 main(){
     echo "======  begin to install sandbox and repeater module       ======";
     echo "======  step 0 begin to download sandbox package           ======";
-#    mkdir -p ${HOME}/.sandbox-module || exit_on_err 1 "permission denied, can not mkdir ~/.sandbox-module"
+    mkdir -p ${HOME}/.sandbox-module || exit_on_err 1 "permission denied, can not mkdir ~/.sandbox-module"
     curl -s https://github.com/alibaba/jvm-sandbox-repeater/releases/download/v1.0.0/sandbox-1.3.3-bin.tar | tar xz -C ${HOME} || exit_on_err 1 "extract sandbox failed"
     echo "======  step 1 begin to download repeater module package   ======";
     if [ ! -d ${MODULE_HOME} ]; then

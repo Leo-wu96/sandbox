@@ -2,8 +2,8 @@
 
 # repeater's target dir
 REPEATER_TARGET_DIR=../target/repeater
-typeset HOME=/Users/zixian.wu/desktop/sandbox-relate/data/fll
-typeset SANDBOX_HOME=/Users/zixian.wu/desktop/sandbox-relate/data/fll/sandbox
+typeset HOME=/Users/zixian.wu/desktop/sandbox-data/data/fll
+typeset SANDBOX_HOME=/Users/zixian.wu/desktop/sandbox-data/data/fll/sandbox
 # exit shell with err_code
 # $1 : err_code
 # $2 : err_msg
